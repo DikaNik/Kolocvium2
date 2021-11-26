@@ -1,20 +1,21 @@
-#include <iostream>
+##include <iostream>
 #include <string>
 
 using namespace std;
 
 int main(){
     char c;
-    string s, s0;
+    string s; 
+    string s1;
 
     cin >> c;
-    cin >> s >> s0;
+    cin >> s;
+    cin >> s1;
 
     for(int i = 0; i < s.length(); ++i) {
         if(s[i] == c) {
-            s.insert(i, s0);
-
-            i += s0.length();
+            s.insert(i, s1);
+            i += s1.length();
         }
     }
 
